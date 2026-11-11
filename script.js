@@ -229,7 +229,7 @@ document.addEventListener("DOMContentLoaded", () => {
     formStatus.textContent = "Processando o envio da mensagem...";
     formStatus.style.color = "var(--accent-color)";
 
-    const FORMSPREE_URL = "COLOQUE_SUA_URL_DO_FORMSPREE_AQUI"; 
+    const FORMSPREE_URL = "https://formspree.io/f/xyewywoq"; 
     const dadosFormulario = new FormData(formContato);
 
     try {
