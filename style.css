@@ -312,3 +312,8 @@ input[aria-invalid="true"], select[aria-invalid="true"], textarea[aria-invalid="
 .status-msg {
   text-align: center;
 }
+
+/* CLASSE OCULTO NECESSÁRIA PARA ESCONDER ELEMENTOS */
+.oculto {
+  display: none !important;
+}
