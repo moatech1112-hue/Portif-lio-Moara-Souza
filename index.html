@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio - Moara Lima Souza</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <div class="titulo">
+        <h1 id="titulo">Portfólio <span>.</span> Moara Lima Souza</h1>
+        <p>Estudante de Engenharia de Software | Cibersegurança & AppSec</p>
+      </div>
+
+      <button id="tema" type="button">Alternar tema</button>
+
+      <nav class="menu">
+        <a href="#sobre">Sobre mim</a>
+        <a href="#conhecimentos">Conhecimentos</a>
+        <a href="#projetos-secao">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="laboratorio" class="card-section">
+        <h2>Laboratório de Projetos</h2>
+        <form id="cadastro" novalidate>
+          <div class="form-group-inline">
+            <div class="field">
+              <label for="nome">Nome do projeto</label>
+              <input id="nome" name="nome" value="Portfólio" required minlength="3" />
+            </div>
+
+            <div class="field">
+              <label for="categoria">Categoria</label>
+              <select id="categoria" name="categoria">
+                <option value="web">Web</option>
+                <option value="mobile">Mobile</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit">Adicionar projeto</button>
+        </form>
+
+        <div class="filtro-container">
+          <label for="filtro">Filtrar projetos: </label>
+          <select id="filtro">
+            <option value="todos">Todos</option>
+            <option value="web">Web</option>
+            <option value="mobile">Mobile</option>
+          </select>
+        </div>
+        <p id="status" role="status"></p>
+      </section>
+
+      <section id="sobre" class="card-section">
+        <h2>Sobre mim</h2>
+        <p>
+          Sou estudante do segundo semestre de Engenharia de Software, com foco na área de cibersegurança.
+        </p>
+        <p id="texto-extra" class="oculto">
+          Atualmente estou aprendendo programação back-end, desenvolvimento web e conceitos avançados relacionados à segurança da informação, RedTeam e análise de vulnerabilidades.
+        </p>
+        <button id="btn-veja-mais" type="button">Veja mais</button>
+      </section>
+
+      <section id="conhecimentos" class="card-section">
+        <h2>Conhecimentos & Habilidades</h2>
+        <ul class="skills-list">
+          <li><span>🐍</span> Básico de Python</li>
+          <li><span>☕</span> Básico de Java</li>
+          <li><span>🌐</span> HTML5 & CSS3</li>
+          <li><span>🛡️</span> Conceitos de Pentest & AppSec</li>
+        </ul>
+
+        <h3>Matriz de Competências</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Tecnologia</th>
+              <th>Nível</th>
+              <th>Onde aplico</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Python</td>
+              <td>Básico</td>
+              <td>Exercícios de programação e automação</td>
+            </tr>
+            <tr>
+              <td>Java</td>
+              <td>Básico</td>
+              <td>Desenvolvimento de aplicações orientadas a objetos</td>
+            </tr>
+            <tr>
+              <td>Pentest</td>
+              <td>Básico</td>
+              <td>Laboratórios práticos de segurança web</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="projetos-secao" class="projetos-container">
+        <h2>Projetos em Destaque</h2>
+        <div id="projetos" aria-label="Projetos">
+          <article class="projeto-card" data-categoria="web">
+            <span class="badge badge-web">Web</span>
+            <h2>Site pessoal</h2>
+            <p>Portfólio interativo desenvolvido com foco em acessibilidade e responsividade.</p>
+            <div class="card-actions">
+              <a href="#" class="link-projeto">Ver projeto</a>
+              <button class="remover" type="button">Remover</button>
+            </div>
+          </article>
+
+          <article class="projeto-card" data-categoria="mobile">
+            <span class="badge badge-mobile">Mobile</span>
+            <h2>Aplicativo de estudos</h2>
+            <p>Aplicação focada em gestão de tempo e organização para estudantes de tecnologia.</p>
+            <div class="card-actions">
+              <button class="remover" type="button">Remover</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <aside class="card-section info-extra">
+        <h2>Informações extras</h2>
+        <p>Meu objetivo profissional é atuar na área de cibersegurança.</p>
+        <ul class="info-list">
+          <li><strong>Interesse:</strong> Cibersegurança</li>
+          <li><strong>Área:</strong> RedTeam e App Security</li>
+          <li><strong>Curso:</strong> Engenharia de Software</li>
+          <li><strong>LinkedIn:</strong> Moara Lima Souza</li>
+        </ul>
+      </aside>
+
+      <section id="contato" class="card-section">
+        <h2>Canais de Contato</h2>
+        <ul class="contato-links">
+          <li>📧 <strong>Email:</strong> moalsouza11@gmail.com</li>
+          <li>📱 <strong>Telefone:</strong> (71) 98527-0952</li>
+          <li>🔗 <a href="https://www.linkedin.com/in/moara-souza-1729ab3b6/" target="_blank">LinkedIn</a></li>
+          <li>💻 <a href="https://github.com/moatech1112-hue" target="_blank">GitHub</a></li>
+        </ul>
+      </section>
+
+      <section class="mensagem card-section">
+        <h3>Envie uma mensagem!</h3>
+        <form id="form-contato" novalidate>
+          <div class="field">
+            <label for="nome-msg">Nome (3 a 80 caracteres)</label>
+            <input type="text" id="nome-msg" name="nome" required minlength="3" maxlength="80" aria-describedby="erro-nome" placeholder="Digite seu nome..." />
+            <span id="erro-nome" class="erro-msg" aria-live="polite"></span>
+          </div>
+
+          <div class="field">
+            <label for="email-msg">E-mail</label>
+            <input type="email" id="email-msg" name="email" required aria-describedby="erro-email" placeholder="seuemail@dominio.com" />
+            <span id="erro-email" class="erro-msg" aria-live="polite"></span>
+          </div>
+
+          <div class="field">
+            <label for="motivo-msg">Motivo do contato</label>
+            <select id="motivo-msg" name="motivo" required aria-describedby="erro-motivo">
+              <option value="">Selecione um motivo...</option>
+              <option value="Oportunidade profissional">Oportunidade profissional</option>
+              <option value="Projeto freelance">Projeto freelance</option>
+              <option value="Outro">Outro</option>
+            </select>
+            <span id="erro-motivo" class="erro-msg" aria-live="polite"></span>
+          </div>
+
+          <div id="container-assunto" class="oculto field">
+            <label for="assunto-msg">Assunto adicional (5 a 100 caracteres)</label>
+            <input type="text" id="assunto-msg" name="assunto" minlength="5" maxlength="100" aria-describedby="erro-assunto" disabled placeholder="Especifique o assunto..." />
+            <span id="erro-assunto" class="erro-msg" aria-live="polite"></span>
+          </div>
+
+          <div class="field">
+            <label for="mensagem-msg">Mensagem (30 a 1000 caracteres)</label>
+            <textarea id="mensagem-msg" name="mensagem" required minlength="30" maxlength="1000" aria-describedby="erro-mensagem" placeholder="Escreva sua mensagem aqui..."></textarea>
+            <div class="contador-container">
+              <small id="contador-msg">0/1000</small>
+            </div>
+            <span id="erro-mensagem" class="erro-msg" aria-live="polite"></span>
+          </div>
+
+          <p id="form-status" class="status-msg" role="status" aria-live="polite"></p>
+          <button type="submit" id="btn-enviar-msg">Enviar mensagem</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Portfólio de <strong>Moara Lima Souza</strong> - 2026</p>
+      <p>Desenvolvido como atividade da disciplina de Programação Front-End.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
